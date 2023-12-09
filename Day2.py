@@ -1,3 +1,4 @@
+# Tip Calculator
 print("Welcome to the tip calculator");
 amount=float(input("What was the total bill? $"));
 noOfPersons=int(input("How many people to split the bill? "));
