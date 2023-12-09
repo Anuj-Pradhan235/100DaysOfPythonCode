@@ -23,3 +23,7 @@
 # bmi = weight_as_int / (height_as_float * height_as_float)
 # bmi_as_int = int(bmi)
 # print(bmi_as_int)
+
+#f-strings
+# score=44
+# print(f"Your score is {score}")
