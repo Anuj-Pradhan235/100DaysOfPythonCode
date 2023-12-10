@@ -51,28 +51,47 @@
 # print("The Love Calculator is calculating your score...")
 
 #love calculator
-name1 = input()  # What is your name?
-name2 = input()  # What is their name?
+# name1 = input()  # What is your name?
+# name2 = input()  # What is their name?
 
-combined_names = name1 + name2
-lower_names = combined_names.lower()
-t = lower_names.count("t")
-r = lower_names.count("r")
-u = lower_names.count("u")
-e = lower_names.count("e")
-first_digit = t + r + u + e
+# combined_names = name1 + name2
+# lower_names = combined_names.lower()
+# t = lower_names.count("t")
+# r = lower_names.count("r")
+# u = lower_names.count("u")
+# e = lower_names.count("e")
+# first_digit = t + r + u + e
 
-l = lower_names.count("l")
-o = lower_names.count("o")
-v = lower_names.count("v")
-e = lower_names.count("e")
-second_digit = l + o + v + e
+# l = lower_names.count("l")
+# o = lower_names.count("o")
+# v = lower_names.count("v")
+# e = lower_names.count("e")
+# second_digit = l + o + v + e
 
-score = int(str(first_digit) + str(second_digit))
-if (score < 10) or (score > 90):
-  print(f"Your score is {score}, you go together like coke and mentos.")
-elif (score >= 40) and (score <= 50):
-  print(f"Your score is {score}, you are alright together.")
+# score = int(str(first_digit) + str(second_digit))
+# if (score < 10) or (score > 90):
+#   print(f"Your score is {score}, you go together like coke and mentos.")
+# elif (score >= 40) and (score <= 50):
+#   print(f"Your score is {score}, you are alright together.")
+# else:
+#   print(f"Your score is {score}.")
+
+#Treasure Island
+print("Welcome to Tressure Island.\nYour misssion is to find the treasure");
+
+if(not input("left or right? ")=="left"):
+    print("Fall into a holde.\nGame Over.");
 else:
-  print(f"Your score is {score}.")
+    if(not input("swim or wait: ")=="wait"):
+        print("Attacked by trout\nGame Over.");
+    else:
+        door=input("Which door: red,blue,yellow; ")
+        if(door=="red"):
+            print("Burned by fire.\nGame Over.")    
+        elif(door=="blue"):
+            print("Eaten by beasts.\nGame Over.")
+        elif(door=="yellow"):
+            print("You Win!");    
+        else :
+            print("Game Over.")
 
