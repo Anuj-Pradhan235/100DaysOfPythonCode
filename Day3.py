@@ -20,6 +20,8 @@ if(height_in_cm>120):
     print("Can ride")
     if(age<=18):
         print("You have to pay $7")
+    elif age<21:
+        print("Go to college your exam's are there");    
     else:
         print("You have to pay $12")    
 else:
